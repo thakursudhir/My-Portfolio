@@ -1,0 +1,59 @@
+// Mobile menu toggle
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+// Typing effect
+const typingText = document.querySelector('.typing-text');
+const words = ["Linux Administrator", "Windows Administrator", "Web Developer", "IT Operation Engineer", "Tech Enthusiast"];
+let i = 0, j = 0, currentWord = '', isDeleting = false;
+
+function type() {
+  currentWord = words[i];
+  typingText.textContent = currentWord.substring(0, j);
+
+  if (!isDeleting && j < currentWord.length) {
+    j++;
+    setTimeout(type, 150);
+  } else if (isDeleting && j > 0) {
+    j--;
+    setTimeout(type, 100);
+  } else {
+    isDeleting = !isDeleting;
+    if (!isDeleting) i = (i + 1) % words.length;
+    setTimeout(type, 800);
+  }
+}
+type();
+
+// Smooth scroll active link
+const sections = document.querySelectorAll("section");
+const navItems = document.querySelectorAll(".nav-links li a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach(sec => {
+    const sectionTop = sec.offsetTop - 100;
+    if (scrollY >= sectionTop) current = sec.getAttribute("id");
+  });
+
+  navItems.forEach(a => {
+    a.classList.remove("active");
+    if (a.getAttribute("href") === "#" + current) {
+      a.classList.add("active");
+    }
+  });
+});
+
+// Contact form (demo)
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+
+contactForm.addEventListener("submit", e => {
+  e.preventDefault();
+  formMessage.textContent = "✅ Message sent successfully! (Demo)";
+  contactForm.reset();
+});
