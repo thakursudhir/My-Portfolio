@@ -8,7 +8,7 @@ menuToggle.addEventListener('click', () => {
 
 // Typing effect
 const typingText = document.querySelector('.typing-text');
-const words = ["Linux Administrator", "Windows Administrator", "Web Developer", "IT Operation Engineer", "Tech Enthusiast"];
+const words = ["IT Operation Engineer","Linux System Administrator", "Windows Administrator", "Web Developer", "Database Administrator", "Tech Enthusiast"];
 let i = 0, j = 0, currentWord = '', isDeleting = false;
 
 function type() {
@@ -57,3 +57,28 @@ contactForm.addEventListener("submit", e => {
   formMessage.textContent = "✅ Message sent successfully! (Demo)";
   contactForm.reset();
 });
+
+//Skills bar transitions
+const progressBars = document.querySelectorAll(".progress-fill");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      progressBars.forEach((bar, index) => {
+        setTimeout(() => {
+          bar.style.width = bar.getAttribute("data-fill");
+        }, index * 300); // 300ms delay per bar
+      });
+    } else {
+      progressBars.forEach(bar => {
+        bar.style.width = "0"; // reset when hidden
+      });
+    }
+  });
+}, { threshold: 0.5 });
+
+progressBars.forEach(bar => {
+  observer.observe(bar);
+});
+
+

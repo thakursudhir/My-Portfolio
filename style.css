@@ -168,62 +168,66 @@ button:hover {
   ---------------------------------------------*/
 /* Skills*/
 #skills {
-  padding: 20px;
+  padding: 40px;
 }
 
 .skills-container {
   display: flex;
   align-items: flex-start; /* vertical alignment */
+  justify-content: space-between;
   gap: 40px; /* space between image and skills */
+  flex-wrap: wrap;
 }
 
 .skills-image img {
-  max-width: 450px; /* adjust size */
+  max-width: 300px; /* adjust size */
   border-radius: 10px;
+  align-items: center;
+  cursor:pointer;
 }
+
+.skills-image img:hover {
+  border: 3px solid #e8ee26;
+  transform: scale(1.05);
+}
+
 
 .skills-bars {
   flex: 1; /* take remaining width */
+  text-align: left;
+  padding-left: 25px;
 }
 
 .skill-bar {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .progress {
-  width: 100%;
-  background: #ddd;
-  height: 10px;
-  border-radius: 5px;
+  width: 80%;
+  background: #dddddd;
+  height: 18px;   /* bar ki motai badh gayi */
+  border-radius: 25px;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
-  background: #007bff;
-  border-radius: 5px;
+  background: #318506;
+  border-radius: 25px;
+  width: 0;                       /* start from 0 */
+  transition: width 5s ease-in-out; /* smooth effect */ /* smooth animation */
+}
+/* Keyframes for animation */
+@keyframes fillAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--fill-width);  /* dynamic width use karenge */
+  }
 }
 
-/* Projects */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 12px;
-  transition: 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(56,189,248,0.3);
-}
-
-/* Timeline */
+/* Timeline -----------------Education previous
 .timeline {
   max-width: 600px;
   margin: auto;
@@ -237,8 +241,247 @@ button:hover {
   border-left: 4px solid #38bdf8;
   border-radius: 6px;
 }
+  */
 
-/* Contact */
+#education {
+  padding: 40px;
+  background-color: #ea0592fc;
+}
+
+
+.education-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Left side slideshow */
+.edu-images {
+  width: 600px;         /*50%;*/
+  border-radius: 10px;
+  /*position: relative;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;*/
+
+  
+
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 350px; /* adjust according to your image size */
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  animation: fadeSlide 9s infinite;
+}
+
+/* Each image delay */
+.slideshow img:nth-child(1) {
+  animation-delay: 1s;
+}
+.slideshow img:nth-child(2) {
+  animation-delay: 3s;
+}
+.slideshow img:nth-child(3) {
+  animation-delay: 6s;
+}
+.slideshow img:nth-child(4) {
+  animation-delay: 9s;
+}
+.slideshow img:nth-child(5) {
+  animation-delay: 12s;
+}
+.slideshow img:nth-child(6) {
+  animation-delay: 15s;
+}
+.slideshow img:nth-child(7) {
+  animation-delay: 18s;
+}
+/* Fade + pause animation */
+@keyframes fadeSlide {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }   /* fade in */
+  40%  { opacity: 1; }   /* stay visible */
+  50%  { opacity: 0; }   /* fade out */
+  100% { opacity: 0; }
+}
+
+/* Right side details */
+
+.edu-details {
+  width: 100%;
+  flex: 1;
+  
+}
+
+.timeline-item {
+  margin-top: 25px;
+  padding: 15px;
+  border-left: 5px solid #2fe726;
+  /*border-image: linear-gradient(to bottom, #e26b10fd, #0ee031) 1;*/
+  border-radius: 6px;
+  box-shadow: 0 3px 7px rgba(34, 31, 31, 0.94);
+}
+
+.timeline-item h3 {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+.timeline-item p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color:black;
+}
+
+/* Experiences---------------------------------*/
+#experience {
+  padding: 40px;
+  background: #f9f9f9; /* halka background */
+}
+
+.exp-timeline {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* responsive ke liye */
+}
+
+.exp-item {
+  flex: 1 1 350px; /* har box min 350px le, baaki wrap ho jaye */
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.exp-item h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.exp-item .company,
+.exp-item .location,
+.exp-item .duration {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.responsibilities {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.responsibilities li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #191a1b;
+  text-align: left;
+}
+
+
+/*------------Experiences closed  -------------*/
+
+/* Projects ---------------Start------*/
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative; /* overlay ke liye zaroori */
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay */
+.project-card::after {
+  content: "View Project";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px; /* image height ke barabar */
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.project-card:hover::after {
+  opacity: 1;
+}
+
+
+/* Projects ---------------Closed---------*/
+
+/* Contact -------------Previous----------
 form {
   display: flex;
   flex-direction: column;
@@ -257,6 +500,115 @@ form textarea {
 form button {
   width: 100%;
 }
+-----------------------------------*/
+
+/* Contact Section */
+
+#contact {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8fafc;
+}
+
+#contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #28a441;
+  font-size: 15px;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+}
+
+form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(68, 216, 49, 0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e293b;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #38bdf8;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #06b6d4;
+}
+
+.back-to-top {
+  margin: 10px 0px;
+  text-align: right;
+}
+
+.back-to-top a {
+  color: #fbbf24;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.back-to-top a:hover {
+  color: #f5efe6;
+}
+
+footer p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+
+
 
 /* Profile Picture Glowing Circle */
 .profile-pic {
