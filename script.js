@@ -6,21 +6,36 @@ menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });*/
 
-// Mobile menu toggle
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
+const navbar = document.querySelector('nav');
 
-// Toggle menu when clicking hamburger
+// Toggle menu & icon rotation
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('show');
+  menuToggle.classList.toggle('active');
 });
 
-// Close menu when clicking any link
+// Close menu when clicking a link
 document.querySelectorAll('#navLinks a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('show');
+    menuToggle.classList.remove('active');
   });
 });
+
+// Navbar shadow on scroll
+window.addEventListener('scroll', () => {
+  navLinks.classList.remove('show');
+  menuToggle.classList.remove('active');
+
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
 
 // Close menu on scroll
 window.addEventListener('scroll', () => {
