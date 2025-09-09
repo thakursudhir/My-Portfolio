@@ -1,10 +1,32 @@
-// Mobile menu toggle
+/* Mobile menu toggle
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('show');
+});*/
+
+// Mobile menu toggle
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+// Toggle menu when clicking hamburger
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
 });
+
+// Close menu when clicking any link
+document.querySelectorAll('#navLinks a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+  });
+});
+
+// Close menu on scroll
+window.addEventListener('scroll', () => {
+  navLinks.classList.remove('show');
+});
+
 
 // Typing effect
 const typingText = document.querySelector('.typing-text');

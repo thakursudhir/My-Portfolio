@@ -70,6 +70,9 @@ header {
   color: #38bdf8;
   cursor: pointer;
 }
+/*----------*/
+
+
 
 /* Hero */
 .hero {
@@ -705,5 +708,4 @@ footer p {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #191a1b;
-
 }
