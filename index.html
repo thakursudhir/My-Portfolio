@@ -3,308 +3,573 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sudhir Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Sudhir Thakur - IT Operations Engineer, Linux Administrator & Web Developer. B.Tech in Computer Science with 2+ years of experience in IT infrastructure management.">
+  <meta name="keywords" content="Sudhir Thakur, IT Engineer, Linux Administrator, Web Developer, DevOps, Portfolio, Computer Science">
+  <meta name="author" content="Sudhir Kumar Thakur">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thakursudhir.github.io/portfolio/">
+  <meta property="og:title" content="Sudhir Thakur - IT Operations Engineer & Web Developer">
+  <meta property="og:description" content="Portfolio of Sudhir Thakur - IT Operations Engineer, Linux Administrator with expertise in Web Development, DevOps, and Cloud Services.">
+  <meta property="og:image" content="Images/mpic.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://thakursudhir.github.io/portfolio/">
+  <meta property="twitter:title" content="Sudhir Thakur - IT Operations Engineer & Web Developer">
+  <meta property="twitter:description" content="Portfolio of Sudhir Thakur - IT Operations Engineer, Linux Administrator with expertise in Web Development, DevOps, and Cloud Services.">
+  <meta property="twitter:image" content="Images/mpic.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Images/mpic.png">
+  
+  <title>Sudhir Thakur | IT Operations Engineer & Web Developer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-
 </head>
+
 <body>
   <!-- Navbar -->
   <header>
     <nav class="navbar">
-      <div class="logo">Sudhir Thakur</div>
+      <div class="logo">Sudhir<span class="highlight">Thakur</span></div>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="active" aria-label="Go to Home">Home</a></li>
+        <li><a href="#about" aria-label="Go to About">About</a></li>
+        <li><a href="#skills" aria-label="Go to Skills">Skills</a></li>
+        <li><a href="#education" aria-label="Go to Education">Education</a></li>
+        <li><a href="#experience" aria-label="Go to Experience">Experience</a></li>
+        <li><a href="#projects" aria-label="Go to Projects">Projects</a></li>
+        <li><a href="#contact" aria-label="Go to Contact">Contact</a></li>
       </ul>
-      <div class="menu-toggle" id="menuToggle">
+      <div class="menu-toggle" id="menuToggle" aria-label="Toggle menu" role="button" tabindex="0">
         <i class="fas fa-bars"></i>
       </div>
     </nav>
   </header>
 
-  <!-- Hero -->
-
+  <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="content">
-      <h1>Hi, I'm Sudhir 👋</h1>
-      <p class="typing-text"></p>
-      <div class="buttons">
-        <a href="https://drive.google.com/file/d/1RGkIFKznsdcEw2FKPRCoBpDRTTEF9JFV/view?usp=sharing"><button>Download CV</button></a>
-        <button>Hire Me</button>
+    <div class="hero-content">
+      <div class="content">
+        <p class="greeting">Hello, I'm</p>
+        <h1>Sudhir <span class="highlight">Thakur</span> 👋</h1>
+        <p class="typing-text"></p>
+        <div class="buttons">
+          <a href="https://drive.google.com/file/d/1RGkIFKznsdcEw2FKPRCoBpDRTTEF9JFV/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-secondary">Message Me</a>
+        </div>
+        <div class="socials">
+          <a target="_blank" href="https://www.linkedin.com/in/sudhir-kumar-thakur-9b52311b4/?trk=public-profile-join-page" aria-label="LinkedIn Profile" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/thakursudhir" target="_blank" aria-label="GitHub Profile" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a target="_blank" href="https://twitter.com/Sudhir_Thakur10" aria-label="Twitter Profile" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          <a target="_blank" href="https://www.youtube.com/@apnachoice01" aria-label="YouTube Channel" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+          <a target="_blank" href="https://www.instagram.com/sudhir_thakur0101/profilecard/?igsh=MWh5aGFlNno1YzV1Yg==" aria-label="Instagram Profile" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-      <div class="socials">
-        <a target="_blank" href="https://www.linkedin.com/in/sudhir-kumar-thakur-9b52311b4/?trk=public-profile-join-page"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a target="_blank" href="https://x.com/Sudhir_Thakur10?s=09"><i class="fab fa-twitter"></i></a>
-        <a target="_blank" href="https://www.youtube.com/@apnachoice01"><i class="fab fa-youtube"></i></a>
-        <a target="_blank" href="https://www.instagram.com/sudhir_thakur0101/profilecard/?igsh=MWh5aGFlNno1YzV1Yg=="> <i class="fab fa-instagram"></i></a>
+      <div class="circle-img">
+        <img src="Images/mpic.png" alt="Sudhir Thakur - IT Operations Engineer">
       </div>
     </div>
-    <div class="circle-img">
-      <img src="mpic.png" alt="">
-    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+      <i class="fas fa-chevron-down"></i>
+    </a>
   </section>
 
-
-  <!-- About -----------------------------
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about">
-    <p><centre>I am a Computer Science Engineering graduate from Bhopal Institute of Technology and Science (RGPV, M.P.), with a Diploma in Computer Science from Government Polytechnic Saharsa. Over the past 2+ years, I have gained valuable experience as a Linux Administrator and IT Support Engineer, managing Ubuntu servers, Samba file sharing, Active Directory, Office 365, VPNs, and providing effective remote and on-site support.
-    <br>While I have solid experience in IT support and system administration, my passion lies in transitioning towards DevOps, software development, and database management. I have actively developed skills in shell scripting for automation, Java microservices with Spring Boot, and front-end web technologies including HTML, CSS, and JavaScript. Additionally, I am proficient in AWS cloud services, SQL databases, and familiar with DevOps tools such as Git, Docker, and CI/CD pipelines.
-    <br>I am committed to continuous learning and excited to take on challenges that align with my career aspirations in development and DevOps.</centre></p>
-    
-    </div>
-     <div class="circle-img">
-      <img src="mpic.png" alt="">
-    </div>
-
-  </section>
-  -->
-  <!---- About ---------------------------------------------->
+  <!-- About Section -->
   <section id="about" data-aos="fade-right">
-  <h2>About</h2>
-  <div class="about-container">
-    
-    <!-- Image on the left -->
-    <div class="circle-img">
-      <img src="mpic.png" alt="">
-    </div>
-
-    <!-- About text on the right -->
-    <div class="about-text">
-      <p>
-        I am a Computer Science Engineering graduate from Bhopal Institute of Technology and Science (RGPV, M.P.), with a Diploma in Computer Science from Government Polytechnic Saharsa. Over the past 2+ years, I have gained valuable experience as a Linux Administrator and IT Support Engineer, managing Ubuntu servers, Samba file sharing, Active Directory, Office 365, VPNs, and providing effective remote and on-site support.
-        <br><br>
-        While I have solid experience in IT support and system administration, my passion lies in transitioning towards DevOps, software development, and database management. I have actively developed skills in shell scripting for automation, Java microservices with Spring Boot, and front-end web technologies including HTML, CSS, and JavaScript. Additionally, I am proficient in AWS cloud services, SQL databases, and familiar with DevOps tools such as Git, Docker, and CI/CD pipelines.
-        <br><br>
-        I am committed to continuous learning and excited to take on challenges that align with my career aspirations in development and DevOps.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
- <!-- Skills Section --------------------->
-<section id="skills" data-aos="fade-left">
-  <h2>Skills</h2>
-  <div class="skills-container">
-    <!-- Image on the left -->
-    <div class="skills-image">
-      <img src="Images/skills.png" alt="Skills" />
-    </div>
-
-    <!-- Skills bars on the right -->
-    <div class="skills-bars">
-       <div class="skill-bar">
-        <p>Java</p>
-        <div class="progress"><div class="progress-fill" data-fill="75%"></div></div>
+    <h2 class="section-title">About <span class="highlight">Me</span></h2>
+    <div class="about-container">
+      <!-- Image on the left -->
+      <div class="about-image">
+        <div class="image-wrapper">
+          <img src="Images/mpic.png" alt="Sudhir Thakur Portrait">
+        </div>
       </div>
 
-       <div class="skill-bar">
-        <p>MySQL</p>
-        <div class="progress"><div class="progress-fill" data-fill="90%"></div></div>
+      <!-- About text on the right -->
+      <div class="about-text">
+        <h3>IT Professional | Developer | Tech Enthusiast</h3>
+        <p>
+          I am a Computer Science Engineering graduate from Bhopal Institute of Technology and Science (RGPV, M.P.), with a Diploma in Computer Science from Government Polytechnic Saharsa. Over the past 3+ years, I have gained valuable experience as a Linux Administrator and IT Support Engineer, managing Ubuntu servers, Samba file sharing, Active Directory, Office 365, VPNs, and providing effective remote and on-site support.
+        </p>
+        <p>
+          While I have solid experience in IT support and system administration, my passion lies in transitioning towards DevOps, software development, and database management. I have actively developed skills in shell scripting for automation, Java microservices with Spring Boot, and front-end web technologies including HTML, CSS, and JavaScript.
+        </p>
+        <p>
+          Additionally, I am proficient in AWS cloud services, SQL databases, and familiar with DevOps tools such as Git, Docker, and CI/CD pipelines. I am committed to continuous learning and excited to take on challenges that align with my career aspirations in development and DevOps.
+        </p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
       </div>
-
-      <div class="skill-bar">
-        <p>HTML</p>
-        <div class="progress"><div class="progress-fill" data-fill="90%"></div></div>
-      </div>
-
-      <div class="skill-bar">
-        <p>CSS</p>
-        <div class="progress"><div class="progress-fill" data-fill="80%"></div></div>
-      </div>
-
-      <div class="skill-bar">
-        <p>JavaScript</p>
-        <div class="progress"><div class="progress-fill" data-fill="75%"></div></div>
-      </div>
-
-      <div class="skill-bar">
-        <p>Operating Systems: Windows, Mac OS, Linux</p>
-        <div class="progress"><div class="progress-fill" data-fill="95%"></div></div>
-      </div>
-
-      <div class="skill-bar">
-        <p>Server and Networking:</p>
-        <div class="progress"><div class="progress-fill" data-fill="75%"></div></div>
-        <p>Active Directory, Samba server configuration, VPN, VDI, basic networking</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Education -----------------------Previous
-  <section id="education">
-    <h2>Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">B.Tech in Computer Science & Engineering - RGPV University, Bhopal</div>
-      <div class="timeline-item">Class 12th - CBSE</div>
     </div>
   </section>
--------------------Education--------->
-<section id="education" data-aos="zoom-in">
-  <h2>Education</h2>
-  <div class="education-container">
-    
-    <!-- Left side: slideshow images -->
-    <div class="edu-images">
-      <div class="slideshow">
-        <img src="Images/BITS.jpeg" alt="College">
-        <img src="Images/Group 1.jpg" alt="">
-        <img src="Images/Group 2.jpg" alt="">
-        <img src="Images/RGPV.jpg" alt="College">
-        <img src="Images/Group 3.jpg" alt="">
-        <img src="Images/Group 4.jpg" alt="">
-        <img src="Images/Group 5.jpg" alt="">
+
+  <!-- Skills Section -->
+  <section id="skills" data-aos="fade-left">
+    <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+    <div class="skills-container">
+      <!-- Skills bars on the left -->
+      <div class="skills-bars">
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>Linux Administration</span>
+            <span>95%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-fill="95%"></div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>Windows Administration</span>
+            <span>90%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-fill="90%"></div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>Shell Scripting (BASH)</span>
+            <span>80%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-fill="80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>AWS Cloud</span>
+            <span>70%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-fill="70%"></div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>Docker</span>
+            <span>70%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-fill="90%"></div>
+        </div>
+        
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>HTML & CSS</span>
+            <span>90%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-fill="90%"></div>
+        </div>
+
+        
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>JavaScript</span>
+            <span>75%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-fill="75%"></div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>Java</span>
+            <span>75%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-fill="75%"></div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>MySQL</span>
+            <span>90%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-fill="90%"></div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>C And C++</span>
+            <span>95%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-fill="90%"></div>
+        </div>
+
+
+        
+      </div>
+      
+      <!-- Skills icons on the right - DevOps & Linux Tools -->
+      <div class="skills-icons">
+        <div class="skill-icon"><i class="fab fa-linux"></i><span>Linux</span></div>
+        <div class="skill-icon"><i class="fab fa-windows"></i><span>Windows</span></div>
+        <div class="skill-icon"><i class="fab fa-ubuntu"></i><span>Ubuntu</span></div>
+        <div class="skill-icon"><i class="fab fa-aws"></i><span>AWS</span></div>
+        <div class="skill-icon"><i class="fab fa-docker"></i><span>Docker</span></div>
+        <div class="skill-icon"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="skill-icon"><i class="fab fa-github"></i><span>GitHub</span></div>
+        <div class="skill-icon"><i class="fab fa-jenkins"></i><span>Jenkins</span></div>
+        <div class="skill-icon"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="skill-icon"><i class="fas fa-database"></i><span>MySQL</span></div>
+        <div class="skill-icon"><i class="fas fa-server"></i><span>Apache</span></div>
+        <div class="skill-icon"><i class="fas fa-network-wired"></i><span>Networking</span></div>
+        <div class="skill-icon"><i class="fas fa-shield-alt"></i><span>Active Dir.</span></div>
+        <div class="skill-icon"><i class="fas fa-cloud"></i><span>Office 365</span></div>
+        <div class="skill-icon"><i class="fas fa-lock"></i><span>VPN</span></div>
+        <div class="skill-icon"><i class="fas fa-code-branch"></i><span>CI/CD</span></div>
       </div>
     </div>
+  </section>
 
-    <!-- Right side: education details -->
-    <div class="edu-details">
-      <div class="timeline-item">
-        <h3>B.Tech in Computer Science & Engineering</h3>
-        <p>RAJIV GANDHI PROUDYOGIKI VISHWAVIDYALAYA, BHOPAL - M.P (2022 – 2025)</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Diploma in Computer Science & Engineering</h3>
-        <p>STATE BOARD OF TECHNICAL EDUCATION, PATNA - BIHAR (2018 – 2021)</p>
-      </div>
+  <!-- Education Section -->
+  <section id="education" data-aos="zoom-in">
+    <h2 class="section-title">My <span class="highlight">Education</span></h2>
+    <div class="education-container">
+      <!-- Education details -->
+      <div class="edu-details">
         <div class="timeline-item">
-        <h3>Secondary School (10th)</h3>
-        <p>BIHAR SCHOOL EXAMINATION BOARD, PATNA - BIHAR (2017 – 2018)</p>
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <p class="institution">RAJIV GANDHI PROUDYOGIKI VISHWAVIDYALAYA, BHOPAL - M.P</p>
+            <p class="duration">2022 – 2025</p>
+            <span class="grade">Percentage: 82.60%</span>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>Diploma in Computer Science & Engineering</h3>
+            <p class="institution">STATE BOARD OF TECHNICAL EDUCATION, PATNA - BIHAR</p>
+            <p class="duration">2018 – 2021</p>
+            <span class="grade">Percentage: 83.80%</span>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>Secondary School (10th)</h3>
+            <p class="institution">BIHAR SCHOOL EXAMINATION BOARD, PATNA - BIHAR</p>
+            <p class="duration">2017 – 2018</p>
+            <span class="grade">Percentage: 70.20%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slideshow images -->
+      <div class="edu-images">
+        <div class="slideshow">
+          <div class="slide active">
+            <img src="Images/BITS.jpeg" alt="Bhopal Institute of Technology and Science">
+          </div>
+          <div class="slide">
+            <img src="Images/RGPV.jpg" alt="RGPV University">
+          </div>
+          <div class="slide">
+            <img src="Images/Group 1.jpg" alt="College Event">
+          </div>
+          <div class="slide">
+            <img src="Images/Tech summit.jpg" alt="College Event">
+          </div>
+          <div class="slide-controls">
+            <button class="prev-btn" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
       </div>
     </div>
-    
-  </div>
-</section>
+  </section>
 
-<!----- Experience -----------previous--
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">IT Operation Engineer @ Datamatics Global Services Limited. (Aug 2024 - Present)</div>
-      <div class="timeline-item">Intern @ Company B (2022)</div>
+  <!-- Experience Section -->
+  <section id="experience" data-aos="fade-up">
+    <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+    <div class="exp-timeline">
+
+      <!-- First Experience -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <h3>IT Operations Engineer</h3>
+          <span class="company">🏢 Datamatics Global Services Limited</span>
+        </div>
+        <div class="exp-meta">
+          <span class="location"><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+          <span class="duration"><i class="fas fa-calendar-alt"></i> Aug 2024 - Present</span>
+        </div>
+        <ul class="responsibilities">
+           <!-- Core IT Support & Infrastructure -->
+            <li>Managing IT infrastructure and resolving user technical issues efficiently</li>
+            <li>Configuring, maintaining, and troubleshooting Windows, Linux, and macOS systems</li>
+            <li>Installing and supporting VPNs, Outlook, and endpoint security solutions</li>
+            <li>Coordinating with developers and cross-functional teams for seamless IT operations</li>
+            <li>Assisting in server configuration, deployment, and system performance monitoring</li>
+            <li>Performing system updates, patch management, and security hardening practices</li>
+            <li>Monitoring network performance and troubleshooting connectivity issues</li>
+              <li>Handled 15–20 hardware and software support tickets per day, ensuring timely resolution</li>
+
+          <!-- Active Directory & User Management -->
+            <li>Managing Active Directory (user accounts, group policies, permissions, and access control)</li>
+
+            <!-- Linux Administration -->
+            <li>Administering Linux servers including user management, package installation, and system configuration</li>
+            <li>Managing file systems, disk partitions, and storage (LVM) in Linux environments</li>
+            <li>Monitoring system performance using tools like top, htop, df, and system monitoring utilities</li>
+            <li>Configuring and maintaining SSH, cron jobs, and system services in Linux</li>
+            <li>Performing log analysis and troubleshooting using syslog and journalctl</li>
+            <li>Implementing basic shell scripting for automation and routine system tasks</li>
+
+          <!-- End-User Support & Hardware -->
+            <li>Providing remote and on-site technical support to end-users</li>
+            <li>Supporting hardware setup, upgrades, and maintenance (desktops, laptops, peripherals)</li>
+
+          <!-- Backup, Documentation & Operations -->
+            <li>Ensuring data backup procedures and assisting in disaster recovery planning</li>
+            <li>Documenting IT processes, troubleshooting steps, and maintaining knowledge base articles</li>
+            <li>Maintaining asset inventory and tracking IT equipment</li>
+            <li>Identifying recurring issues and suggesting process improvements</li>
+
+        </ul>
+      </div>
+
+      <!-- Second Experience -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <h3>Associate Engineer</h3>
+          <span class="company">🏢 Aforeserve.com Limited</span>
+        </div>
+        <div class="exp-meta">
+          <span class="location"><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+          <span class="duration"><i class="fas fa-calendar-alt"></i> Apr 2022 - Jun 2023</span>
+        </div>
+        <ul class="responsibilities">
+          <li>Assembled, disassembled, and maintained desktop and laptop hardware</li>
+          <li>Diagnosed and troubleshot motherboard and hardware component issues</li>
+          <li>Installed and configured operating systems (Windows/Linux) and essential software</li>
+          <li>Performed system diagnostics and hardware health checks</li>
+          <li>Handled RAM, HDD/SSD upgrades, and component replacements</li>
+          <li>Provided on-site and remote technical support to end-users</li>
+          <li>Managed basic network connectivity issues (LAN/Wi-Fi troubleshooting)</li>
+          <li>Installed drivers, patches, and system updates</li>
+          <li>Maintained records of IT issues, repairs, and service reports</li>
+          <li>Ensured proper cable management and workstation setup</li>
+          <li>Coordinated with senior technicians for complex issue resolution</li>
+          <li>Escalated unresolved or critical issues following support protocols</li>
+          <li>Tested systems after repair to ensure optimal performance</li>
+          <li>Followed safety and quality standards during hardware handling</li>
+        </ul>
+      </div>
     </div>
   </section>
-------------------------------- EXPERIENCES ---------Start----->
-<section id="experience" data-aos="fade-up">
-  <h2>Experiences</h2>
-  <div class="exp-timeline">
 
-    <!-- First Experience -->
-    <div class="exp-item">
-      <h3>IT Operation Engineer</h3>
-      <span class="company">Datamatics Global Services Limited.</span>
-      <span class="location">📍 Bangalore, India</span>
-      <span class="duration">(Aug 2024 - Present)</span>
-      <ul class="responsibilities">
-        <li>Managing IT infrastructure and resolving user technical issues.</li>
-        <li>Configuring and troubleshooting Windows, Linux & Mac systems.</li>
-        <li>Handling VPN, Outlook, and security software installation.</li>
-        <li>Coordinating with developers for IT operations support.</li>
-        <li>Assisted in server configuration and system monitoring.</li>
-        <li>Many more...</li>
-      </ul>
+  <!-- Projects Section -->
+  <section id="projects" data-aos="fade-right">
+    <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+      <a target="_blank" href="https://thakursudhir.github.io/weatherweb/" class="project-card" rel="noopener noreferrer">
+        <div class="project-image">
+          <img src="Images/Weather.png" alt="Weather Application" loading="lazy">
+          <div class="project-overlay">
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Weather Web Application</h3>
+          <p>Real-time weather data using OpenWeather API</p>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>API</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2 -->
+      <a target="_blank" href="https://thakursudhir.github.io/django-notes-app-main/" class="project-card" rel="noopener noreferrer">
+        <div class="project-image">
+          <img src="Images/django_notes.png" alt="Django Notes App" loading="lazy">
+          <div class="project-overlay">
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Django Notes App</h3>
+          <p>Full-stack note-taking application</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Django</span>
+            <span>SQLite</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 3 -->
+      <a target="_blank" href="https://thakursudhir.github.io/emi-calculator/" class="project-card" rel="noopener noreferrer">
+        <div class="project-image">
+          <img src="Images/emi-calculator.png" alt="EMI Calculator" loading="lazy">
+          <div class="project-overlay">
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>EMI & Interest Calculator</h3>
+          <p>Financial calculator for loans and interest</p>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 4 - Portfolio -->
+      <a href="#home" class="project-card">
+        <div class="project-image">
+          <img src="Images/mpic.png" alt="Personal Portfolio" loading="lazy">
+          <div class="project-overlay">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Personal Portfolio</h3>
+          <p>Responsive portfolio website (Current Site)</p>
+          <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </a>
+
     </div>
+  </section>
 
-    <!-- Second Experience -->
-    <div class="exp-item">
-      <h3>Associate Engineer</h3>
-      <span class="company">Aforeserve.com Limited.</span>
-      <span class="location">📍 Chennai, India</span>
-      <span class="duration">(Apr 2022 - Jun 2023)</span>
-      <ul class="responsibilities">
-        <li>Assemble, disassemble, and maintain desktop and laptop hardware.</li>
-        <li>Test and troubleshoot motherboard and hardware components.</li>
-        <li>Document IT issues and resolutions.</li>
-        <li>Escalate unresolved issues to senior technicians.</li>
-      </ul>
+  <!-- Contact Section -->
+  <section id="contact" data-aos="zoom-in">
+    <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>thakursudhir2002@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <p>+91 6204513074</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Location</h4>
+            <p>Bangalore, India</p>
+          </div>
+        </div>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required aria-label="Your Name">
+          <input type="email" id="email" placeholder="Your Email" required aria-label="Your Email">
+        </div>
+        <input type="text" id="subject" placeholder="Subject" required aria-label="Subject">
+        <textarea id="message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+      <p id="formMessage"></p>
     </div>
+  </section>
 
-  </div>
-</section>
-<!----------------------Experience Closed---------------->
-  <!-- Projects ----------------------start-->
-<section id="projects" data-aos="fade-right">
-  <h2>Projects</h2>
-  <div class="project-grid">
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>Sudhir<span class="highlight">Thakur</span></h3>
+        <p>IT Professional | Developer | Tech Enthusiast</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:thakursudhir2002@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/sudhir-kumar-thakur-9b52311b4/?trk=public-profile-join-page" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/thakursudhir" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+      <div class="back-to-top">
+        <a href="#home" aria-label="Back to Top">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+      </div>
+    <div class="footer-bottom">
+      <p>© 2026 Made by Sudhir Kumar Thakur. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!-- Project 1 -->
-    <a target="_blank" href="https://thakursudhir.github.io/weatherweb/" class="project-card">
-      <img src="Images/Weather.png" alt="Weather Application">
-      <h3>Weather Web Application</h3>
-    </a>
-
-    <!-- Project 2 -->
-     <a target="_blank" href=" https://thakursudhir.github.io/django-notes-app-main/" class="project-card">
-      <img src="Images/django-notes.png" alt="Django-Notes-App">
-      <h3>Django-Notes app</h3>
-    </a>
-
-    <!-- Project 3 -->
-    <a target="_blank" href="https://thakursudhir.github.io/emi-calculator/" class="project-card">
-      <img src="Images/emi-calculator.png" alt="EMI & Interest Calculator">
-      <h3>EMI & Interest Calculator</h3>
-    </a>
-
-  </div>
-</section>
-
- 
- <!-- Contact Section -->
-<section id="contact" data-aos="zoom-in">
-  <h2>Contact Me</h2>
-  <form id="contactForm">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Message" required></textarea>
-    <button type="submit">📩 Send Message</button>
-  </form>
-  <p id="formMessage"></p>
-</section>
-
-<!-- Footer -->
-<footer>
-  <div class="footer-links">
-    <a href="mailto:thakursudhir2002@gmail.com" target="_blank">📧 Email</a>
-    <a target="_blank" href="https://www.linkedin.com/in/sudhir-kumar-thakur-9b52311b4/?trk=public-profile-join-page"> LinkedIn <i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/thakursudhir" target="_blank">🐙 GitHub</a>
-  </div>
-
-  <div class="back-to-top">
-    <a href="#home">⬆ Back to Top</a>
-  </div>
-
-  <p>© 2025 Made by Sudhir Kumar Thakur. All rights reserved.</p>
-</footer>
-
-
-
+  <!-- Scripts -->
   <script src="script.js"></script>
-  <!--------------------->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // animation speed
-    once: false,      // play animation only once
-    mirror: true      // ✅ animate again when scrolling up/down
-  });
-</script>
-
+  <script>
+    // Initialize AOS animation library
+    AOS.init({
+      duration: 1000,
+      once: true,
+      mirror: false,
+      offset: 100,
+      easing: 'ease-out-cubic'
+    });
+  </script>
 </body>
 </html>
-
-
-
-
