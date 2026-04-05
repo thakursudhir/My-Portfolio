@@ -69,8 +69,11 @@ const words = [
   'Linux Administrator',
   'Windows Administrator',
   'Web Developer',
-  'Database Administrator',
-  'DevOps Enthusiast'
+  'DevOps Enthusiast',
+  'Cloude Engineer',
+  'Software Engineer',
+  'Database Administrator'
+  
 ];
 let wi = 0, ci = 0, deleting = false;
 
