@@ -65,11 +65,11 @@ window.addEventListener('scroll', () => {
 // ============================================
 const typingEl = document.querySelector('.typing-text');
 const words = [
-  'IT Operations Engineer',
   'Linux Administrator',
+  'IT Operations Engineer',
   'Windows Administrator',
   'Web Developer',
-  'DevOps Enthusiast',
+  'DevOps Engineer',
   'Cloude Engineer',
   'Software Engineer',
   'Database Administrator'
